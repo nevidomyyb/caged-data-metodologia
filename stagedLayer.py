@@ -47,13 +47,6 @@ for json_file in files:
                     erros+=1
                     sleep(3)
                     continue
-                # import traceback
-                # print("ERRRO ao remover colunas...")
-                # print("Desconsiderando linha.")
-                # traceback.print_exc()
-                # erros+=1
-                # sleep(3)
-                # continue
             processed_obj = df.to_dict(orient='records')[0]
             if not is_first_item:
                 f_out.write(',\n')
